@@ -81,7 +81,10 @@ alzheimer-classification/
 
 ## Authors
 
-**Sheikh Hossain** ([@sheikhhossainn](https://github.com/sheikhhossainn))
+**Sheikh Hossain Bin Bakhtiar** ([@sheikhhossainn](https://github.com/sheikhhossainn))
+**Humaira Habib Usha** ([@sheikhhossainn](https://github.com/Humaira022))
+**Shawna Islam**
+**Bushra Khan Jhilik**
 
 ---
 

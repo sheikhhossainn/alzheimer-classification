@@ -21,7 +21,7 @@ Alzheimer's disease is a progressive neurodegenerative disorder requiring early 
 
 ## Dataset
 
-**[Augmented Alzheimer MRI Dataset v2](https://www.kaggle.com/datasets/tourist55/alzheimers-dataset-4-class-of-images)** from Kaggle
+**[Augmented Alzheimer MRI Dataset v2](https://www.kaggle.com/datasets/uraninjo/augmented-alzheimer-mri-dataset-v2)** from Kaggle
 
 **Classes:**
 - Non-Demented
@@ -50,7 +50,7 @@ alzheimer-classification/
    cd alzheimer-classification
    ```
 
-2. **Download the dataset** from [Kaggle](https://www.kaggle.com/datasets/tourist55/alzheimers-dataset-4-class-of-images)
+2. **Download the dataset** from [Kaggle](https://www.kaggle.com/datasets/uraninjo/augmented-alzheimer-mri-dataset-v2)
 
 3. **Install dependencies**:
    ```bash

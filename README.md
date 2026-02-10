@@ -83,7 +83,7 @@ alzheimer-classification/
 
 **Sheikh Hossain Bin Bakhtiar** ([@sheikhhossainn](https://github.com/sheikhhossainn)) <br>
 **Humaira Habib Usha** ([@humaira](https://github.com/Humaira022)) <br>
-**Shawna Islam** <br>
+**Shawna Islam** ([@shawna](https://github.com/shawna175)) <br>
 **Bushra Khan Jhilik** <br>
 
 ---

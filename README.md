@@ -2,23 +2,6 @@
 
 A deep learning approach for automated classification of Alzheimer's disease using brain MRI scans. This project implements a hybrid CNN + ANN architecture for multi-class classification.
 
----
-
-## Motivation
-
-Alzheimer's disease is a progressive neurodegenerative disorder requiring early and accurate diagnosis. This project aims to develop an automated system to assist clinicians in making faster and more accurate diagnostic decisions using deep learning on neuroimaging data.
-
----
-
-## Methodology
-
-**Two-stage hybrid architecture:**
-
-1. **CNN (Feature Extraction)**: Learns spatial features from MRI images such as tissue atrophy and structural biomarkers
-2. **ANN (Classification)**: Maps extracted features to disease categories
-
----
-
 ## Dataset
 
 **[Augmented Alzheimer MRI Dataset v2](https://www.kaggle.com/datasets/uraninjo/augmented-alzheimer-mri-dataset-v2)** from Kaggle
@@ -29,18 +12,24 @@ Alzheimer's disease is a progressive neurodegenerative disorder requiring early 
 - Mild Demented
 - Moderate Demented
 
----
-
-## Repository Contents
+## Repository Structure
 
 ```
 alzheimer-classification/
-├── Kaggle Notebook/       # EDA and model training notebooks
-├── Project Report/        # Project documentation and results
-└── Related Papers/        # Reference research papers
+├── Kaggle Notebook/
+│   └── [Jupyter notebooks for EDA, data preprocessing, model training and evaluation]
+├── Project Report/
+│   └── [Project documentation, results, and analysis reports]
+├── Related Papers/
+│   └── [Reference research papers and literature]
+└── README.md
 ```
 
----
+### Folder Details
+
+- **Kaggle Notebook/**: Contains Jupyter notebooks with exploratory data analysis (EDA), data preprocessing steps, model architecture implementation, training procedures, and performance evaluation
+- **Project Report/**: Includes comprehensive project documentation, experimental results, performance metrics, and analysis
+- **Related Papers/**: Collection of relevant research papers on Alzheimer's disease classification and deep learning methodologies
 
 ## Usage
 
@@ -62,37 +51,16 @@ alzheimer-classification/
    jupyter notebook
    ```
 
----
-
-## Limitations and Future Work
-
-**Limitations:**
-- Dataset contains augmented images which may introduce artificial patterns
-- Requires significant computational resources
-- Generalization limited to ADNI-based cohort
-
-**Future Work:**
-- Implement transfer learning with pre-trained models
-- Add explainable AI techniques (Grad-CAM, attention mechanisms)
-- Cross-dataset validation
-- Clinical deployment interface
-
----
-
 ## Authors
 
-**Sheikh Hossain Bin Bakhtiar** ([@sheikhhossainn](https://github.com/sheikhhossainn)) <br>
-**Humaira Habib Usha** ([@humaira](https://github.com/Humaira022)) <br>
-**Shawna Islam** ([@shawna](https://github.com/shawna175)) <br>
-**Bushra Khan Jhilik** <br>
-
----
+**Sheikh Hossain Bin Bakhtiar** ([@sheikhhossainn](https://github.com/sheikhhossainn))  
+**Humaira Habib Usha** ([@Humaira022](https://github.com/Humaira022))  
+**Shawna Islam** ([@shawna175](https://github.com/shawna175))  
+**Bushra Khan Zilik** ([@bushra-khan-zilik](https://github.com/bushra-khan-zilik))
 
 ## License
 
 MIT License - see full text in repository
-
----
 
 ## Acknowledgments
 

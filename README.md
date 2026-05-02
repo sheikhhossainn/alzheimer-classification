@@ -13,8 +13,7 @@ A deep learning project for automated multi-class classification of Alzheimer's 
 alzheimer-classification/
 ├── Kaggle Notebook/
 │   ├── Task 1 - EDA/          # Exploratory data analysis & class distribution
-│   ├── Task 2/                # Initial transfer learning (Xception, VGG16, VGG19)
-│   ├── Task 2 (Updated)/      # Extended transfer learning (ResNet50, EfficientNet-B0, DenseNet, MobileNetV2)
+│   ├── Task 2 (Updated)/      # Transfer learning with 5-fold CV (ResNet50, EfficientNet-B0, DenseNet, MobileNetV2)
 │   ├── Task 3/                # Custom CNN trained from scratch
 │   ├── Task 4/                # CBAM attention-enhanced CNN (best model)
 │   ├── Task 5/                # Generalizability test on independent dataset ⭐
@@ -29,11 +28,8 @@ alzheimer-classification/
 ### Task 1 — Exploratory Data Analysis
 Validates data quality, class distributions, and image properties. Training set is synthetically balanced (~6,400–9,600 images/class); the validation set reflects realistic class imbalance, motivating F1-score as the primary metric.
 
-### Task 2 — Transfer Learning (Baseline)
-Benchmarks several ImageNet pre-trained models. Xception achieves **84% test accuracy**. VGG16, VGG19, and paired t-test comparisons are also included.
-
-### Task 2 (Updated) — Transfer Learning (5-Fold CV)
-Re-evaluates four architectures with rigorous 5-fold cross-validation:
+### Task 2 — Transfer Learning (5-Fold CV)
+Evaluates four ImageNet pre-trained architectures with rigorous 5-fold cross-validation:
 
 | Model | Avg Accuracy | Avg F1 |
 |---|---|---|
@@ -81,8 +77,9 @@ Contains the project slide deck and written report summarising the full experime
 | Task 5 | CBAM CNN (Dataset 2) | **99.97%** | 0.9997 |
 | Task 4 | CBAM Attention CNN | 93.71% | 0.9370 |
 | Task 2 (Updated) | ResNet50 | 92.87% | 0.9287 |
+| Task 2 (Updated) | MobileNetV2 | 91.36% | 0.9134 |
 | Task 2 (Updated) | EfficientNet-B0 | 88.00% | 0.8797 |
-| Task 2 | Xception | 84.00% | 0.84 |
+| Task 2 (Updated) | DenseNet121 | 87.54% | — |
 | Task 3 | Custom CNN | 72.59% | 0.7137 |
 
 All multi-model results use **5-fold cross-validation**; F1-score is the primary metric to account for class imbalance.
@@ -110,7 +107,7 @@ All multi-model results use **5-fold cross-validation**; F1-score is the primary
    ```bash
    jupyter notebook
    ```
-   Open each task notebook sequentially: Task 1 → Task 2 → Task 3 → Task 4 → Task 5.
+   Open each task notebook sequentially: Task 1 → Task 2 (Updated) → Task 3 → Task 4 → Task 5.
 
 > **GPU recommended.** Notebooks were developed on Kaggle with dual NVIDIA T4 GPUs. Training times range from ~2.5 hrs (Custom CNN) to ~4.3 hrs (EfficientNet-B0) depending on model complexity.
 
